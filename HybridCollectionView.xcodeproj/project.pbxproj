@@ -11,7 +11,7 @@
 		3B82A61E27CF73D800B5C605 /* MyDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A61D27CF73D800B5C605 /* MyDataSource.swift */; };
 		3B82A62027CF791900B5C605 /* HostingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A61F27CF791900B5C605 /* HostingCell.swift */; };
 		3B82A62227CF7C2900B5C605 /* MySwiftUICell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A62127CF7C2900B5C605 /* MySwiftUICell.swift */; };
-		3B82A62427CF81F600B5C605 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A62327CF81F600B5C605 /* MyCollectionViewCell.swift */; };
+		3B82A62427CF81F600B5C605 /* MySwiftUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A62327CF81F600B5C605 /* MySwiftUICollectionViewCell.swift */; };
 		3B82A62D27D0BCFF00B5C605 /* BaseUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B82A62C27D0BCFF00B5C605 /* BaseUICollectionViewCell.swift */; };
 		3BC2869327CE291B00111ED1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2869227CE291B00111ED1 /* AppDelegate.swift */; };
 		3BC2869527CE291B00111ED1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2869427CE291B00111ED1 /* SceneDelegate.swift */; };
@@ -27,7 +27,7 @@
 		3B82A61D27CF73D800B5C605 /* MyDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDataSource.swift; sourceTree = "<group>"; };
 		3B82A61F27CF791900B5C605 /* HostingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingCell.swift; sourceTree = "<group>"; };
 		3B82A62127CF7C2900B5C605 /* MySwiftUICell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftUICell.swift; sourceTree = "<group>"; };
-		3B82A62327CF81F600B5C605 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B82A62327CF81F600B5C605 /* MySwiftUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftUICollectionViewCell.swift; sourceTree = "<group>"; };
 		3B82A62C27D0BCFF00B5C605 /* BaseUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUICollectionViewCell.swift; sourceTree = "<group>"; };
 		3BC2868F27CE291B00111ED1 /* HybridCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HybridCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC2869227CE291B00111ED1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 				3B82A61D27CF73D800B5C605 /* MyDataSource.swift */,
 				3B82A61F27CF791900B5C605 /* HostingCell.swift */,
 				3B82A62127CF7C2900B5C605 /* MySwiftUICell.swift */,
-				3B82A62327CF81F600B5C605 /* MyCollectionViewCell.swift */,
+				3B82A62327CF81F600B5C605 /* MySwiftUICollectionViewCell.swift */,
 				3B82A62C27D0BCFF00B5C605 /* BaseUICollectionViewCell.swift */,
 			);
 			path = HybridCollectionView;
@@ -161,7 +161,7 @@
 			files = (
 				3BC286A927CE29A300111ED1 /* CollectionViewController.swift in Sources */,
 				3BC2869327CE291B00111ED1 /* AppDelegate.swift in Sources */,
-				3B82A62427CF81F600B5C605 /* MyCollectionViewCell.swift in Sources */,
+				3B82A62427CF81F600B5C605 /* MySwiftUICollectionViewCell.swift in Sources */,
 				3BC2869527CE291B00111ED1 /* SceneDelegate.swift in Sources */,
 				3BC286A727CE297D00111ED1 /* CollectionViewCell.swift in Sources */,
 				3B82A61E27CF73D800B5C605 /* MyDataSource.swift in Sources */,

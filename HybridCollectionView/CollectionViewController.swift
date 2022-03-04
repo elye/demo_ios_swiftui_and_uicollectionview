@@ -10,11 +10,11 @@ class CollectionViewController: UICollectionViewController {
         MyDataSource(type: 1, data: "China"),
         MyDataSource(type: 2, data: "Australia"),
         MyDataSource(type: 1, data: "Japan"),
-        MyDataSource(type: 2, data: "Russia"),
+        MyDataSource(type: 2, data: "United State"),
         MyDataSource(type: 1, data: "United Kingdom"),
-        MyDataSource(type: 3, data: "New Zealand", count: 3),
-        MyDataSource(type: 3, data: "India"),
-        MyDataSource(type: 3, data: "Vietname"),
+        MyDataSource(type: 3, data: "New Zealand", count: 1),
+        MyDataSource(type: 3, data: "India", count: 2),
+        MyDataSource(type: 3, data: "Vietnam", count: 3),
         MyDataSource(type: 1, data: "South Africa"),
         MyDataSource(type: 2, data: "Malaysia"),
         MyDataSource(type: 1, data: "Indonesia"),
@@ -189,7 +189,7 @@ class CollectionViewController: UICollectionViewController {
         let distinctCount = Array(Set(datasource.map { $0.count }.sorted()))
         
         for item in distinctCount {
-            collectionView.register(MyCollectionViewCell.self, forCellWithReuseIdentifier: "\(MyCollectionViewCell.reuseIdentifier):\(item)")
+            collectionView.register(MySwiftUICollectionViewCell.self, forCellWithReuseIdentifier: "\(MySwiftUICollectionViewCell.reuseIdentifier):\(item)")
         }
 
         let layout = collectionView.collectionViewLayout
@@ -227,7 +227,7 @@ class CollectionViewController: UICollectionViewController {
                 }
             }
             default: do {
-                guard let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(MyCollectionViewCell.reuseIdentifier):\(datasource[indexPath.row].count)", for: indexPath) as? MyCollectionViewCell else {
+                guard let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(MySwiftUICollectionViewCell.reuseIdentifier):\(datasource[indexPath.row].count)", for: indexPath) as? MySwiftUICollectionViewCell else {
                     fatalError("Could not dequeue cell")
                 }
                 

@@ -1,7 +1,7 @@
 import UIKit
 import SwiftUI
 
-class MyCollectionViewCell: HostingCell<MySwiftUICell> {
+class MySwiftUICollectionViewCell: HostingCell<MySwiftUICell> {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
