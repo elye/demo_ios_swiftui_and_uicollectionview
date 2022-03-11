@@ -5,6 +5,12 @@ class HostingCell<Content: View>: BaseUICollectionViewCell {
 
     private let hostingController = UIHostingController<Content?>(rootView: nil)
 
+    private func removeHostingControllerFromParent() {
+            hostingController.willMove(toParent: nil)
+            hostingController.view.removeFromSuperview()
+            hostingController.removeFromParent()
+        }
+    
     func configure(with view: Content, in parent: UIViewController?) {
         guard let parent = parent else {
             let message = "parent viewController is required"
@@ -18,7 +24,7 @@ class HostingCell<Content: View>: BaseUICollectionViewCell {
         let requiresControllerMove = hostingController.parent != parent
         if requiresControllerMove {
             print("Tracking: Attaching of UIHostingController to UICollectionView")
-            hostingController.willMove(toParent: parent)
+            removeHostingControllerFromParent()
             parent.addChild(hostingController)
         }
 
